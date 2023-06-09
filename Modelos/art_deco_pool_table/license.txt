@@ -1,0 +1,11 @@
+Model Information:
+* title:	Art Deco Pool Table
+* source:	https://sketchfab.com/3d-models/art-deco-pool-table-c6ef5c5430c44dfab72fda51fd356596
+* author:	Ian Valeta (https://sketchfab.com/valeta.iac)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Art Deco Pool Table" (https://sketchfab.com/3d-models/art-deco-pool-table-c6ef5c5430c44dfab72fda51fd356596) by Ian Valeta (https://sketchfab.com/valeta.iac) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
