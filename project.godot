@@ -6,11 +6,274 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=5
+config_version=4
+
+_global_script_classes=[ {
+"base": "RigidBody2D",
+"class": "Ball",
+"language": "GDScript",
+"path": "res://scripts/pool/ball.gd"
+}, {
+"base": "Area2D",
+"class": "BallInHand",
+"language": "GDScript",
+"path": "res://scripts/pool/ball_in_hand.gd"
+}, {
+"base": "Node2D",
+"class": "BallManager8Ball",
+"language": "GDScript",
+"path": "res://scripts/pool/ball_manager_8_ball.gd"
+}, {
+"base": "HBoxContainer",
+"class": "GameFinishedTeamLabel",
+"language": "GDScript",
+"path": "res://scripts/menus/game_finished_team_label.gd"
+}, {
+"base": "Node",
+"class": "GameManager8Ball",
+"language": "GDScript",
+"path": "res://scripts/pool/game_manager_8_ball.gd"
+}, {
+"base": "Reference",
+"class": "GotmConfig",
+"language": "GDScript",
+"path": "res://gotm/GotmConfig.gd"
+}, {
+"base": "Reference",
+"class": "GotmDebug",
+"language": "GDScript",
+"path": "res://gotm/GotmDebug.gd"
+}, {
+"base": "Reference",
+"class": "GotmFile",
+"language": "GDScript",
+"path": "res://gotm/GotmFile.gd"
+}, {
+"base": "Reference",
+"class": "GotmLeaderboard",
+"language": "GDScript",
+"path": "res://gotm/GotmLeaderboard.gd"
+}, {
+"base": "Reference",
+"class": "GotmLobby",
+"language": "GDScript",
+"path": "res://gotm/GotmLobby.gd"
+}, {
+"base": "Reference",
+"class": "GotmLobbyFetch",
+"language": "GDScript",
+"path": "res://gotm/GotmLobbyFetch.gd"
+}, {
+"base": "Reference",
+"class": "GotmPeriod",
+"language": "GDScript",
+"path": "res://gotm/GotmPeriod.gd"
+}, {
+"base": "Reference",
+"class": "GotmScore",
+"language": "GDScript",
+"path": "res://gotm/GotmScore.gd"
+}, {
+"base": "Reference",
+"class": "GotmUser",
+"language": "GDScript",
+"path": "res://gotm/GotmUser.gd"
+}, {
+"base": "PanelContainer",
+"class": "PlayerContainer",
+"language": "GDScript",
+"path": "res://scripts/menus/player_container.gd"
+}, {
+"base": "Area2D",
+"class": "Pocket",
+"language": "GDScript",
+"path": "res://scripts/pool/pocket.gd"
+}, {
+"base": "Node2D",
+"class": "QueueController",
+"language": "GDScript",
+"path": "res://scripts/pool/queue_controller.gd"
+}, {
+"base": "Reference",
+"class": "_Gotm",
+"language": "GDScript",
+"path": "res://gotm/_impl/_Gotm.gd"
+}, {
+"base": "Reference",
+"class": "_GotmAuth",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmAuth.gd"
+}, {
+"base": "Reference",
+"class": "_GotmAuthLocal",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmAuthLocal.gd"
+}, {
+"base": "Reference",
+"class": "_GotmDebugImpl",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmDebugImpl.gd"
+}, {
+"base": "Reference",
+"class": "_GotmImpl",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmImpl.gd"
+}, {
+"base": "Reference",
+"class": "_GotmImplUtility",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmImplUtility.gd"
+}, {
+"base": "Reference",
+"class": "_GotmLeaderboard",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmLeaderboard.gd"
+}, {
+"base": "Reference",
+"class": "_GotmScore",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmScore.gd"
+}, {
+"base": "Reference",
+"class": "_GotmScoreLocal",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmScoreLocal.gd"
+}, {
+"base": "Reference",
+"class": "_GotmScoreUtility",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmScoreUtility.gd"
+}, {
+"base": "Reference",
+"class": "_GotmStore",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmStore.gd"
+}, {
+"base": "Reference",
+"class": "_GotmTest",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmTest.gd"
+}, {
+"base": "Reference",
+"class": "_GotmUser",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmUser.gd"
+}, {
+"base": "Reference",
+"class": "_GotmUserLocal",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmUserLocal.gd"
+}, {
+"base": "Reference",
+"class": "_GotmUtility",
+"language": "GDScript",
+"path": "res://gotm/_impl/_GotmUtility.gd"
+} ]
+_global_script_class_icons={
+"Ball": "",
+"BallInHand": "",
+"BallManager8Ball": "",
+"GameFinishedTeamLabel": "",
+"GameManager8Ball": "",
+"GotmConfig": "",
+"GotmDebug": "",
+"GotmFile": "",
+"GotmLeaderboard": "",
+"GotmLobby": "",
+"GotmLobbyFetch": "",
+"GotmPeriod": "",
+"GotmScore": "",
+"GotmUser": "",
+"PlayerContainer": "",
+"Pocket": "",
+"QueueController": "",
+"_Gotm": "",
+"_GotmAuth": "",
+"_GotmAuthLocal": "",
+"_GotmDebugImpl": "",
+"_GotmImpl": "",
+"_GotmImplUtility": "",
+"_GotmLeaderboard": "",
+"_GotmScore": "",
+"_GotmScoreLocal": "",
+"_GotmScoreUtility": "",
+"_GotmStore": "",
+"_GotmTest": "",
+"_GotmUser": "",
+"_GotmUserLocal": "",
+"_GotmUtility": ""
+}
 
 [application]
 
-config/name="P3Fisica3"
-run/main_scene="res://Escenas/menu.tscn"
-config/features=PackedStringArray("4.0", "Forward Plus")
-config/icon="res://Resources/icon.svg"
+config/name="Pool Together"
+run/main_scene="res://scenes/Menu.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Lobby="*res://scripts/autoload/lobby.gd"
+BallTextures="*res://scripts/autoload/ball_textures.gd"
+SoundManager="*res://scripts/autoload/sound_manager.gd"
+Enums="*res://scripts/autoload/enums.gd"
+Globals="*res://scripts/autoload/globals.gd"
+Animations="*res://scripts/autoload/animations.gd"
+Gotm="*res://gotm/Gotm.gd"
+GlobalUi="*res://scenes/autoload/GlobalUi.tscn"
+Utils="*res://scripts/autoload/utils.gd"
+
+[debug]
+
+gdscript/warnings/unused_variable=false
+
+[display]
+
+window/size/height=576
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[global]
+
+mip=false
+scale=false
+
+[gui]
+
+theme/custom="res://ui_theme/ui_theme_1.tres"
+
+[input]
+
+lmb={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+rmb={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+mouse_wheel_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":4,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+mouse_wheel_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":5,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+console_toggle={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":true,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":96,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[physics]
+
+common/enable_pause_aware_picking=true
+2d/default_gravity=0
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
